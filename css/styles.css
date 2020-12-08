@@ -1,0 +1,103 @@
+*{
+    
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    min-height: 100vh;
+    background-color: hsl(204, 43%, 93%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+main{
+    background-color: #fff;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px 10px rgba(0, 0, 0, 0.05);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+h1{
+    color: hsl(179, 62%, 43%);
+}
+h2{
+    color: #fff;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+li{
+    color: hsl(204, 43%, 93%);
+    font-weight: 500;
+    opacity: 0.7;
+    line-height: 24px;
+}
+button{
+    background-color:hsl(71, 73%, 54%);
+    width: 100%;
+    border-radius: 5px;
+    padding: 15px 0;
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    margin-top: 15px;
+    box-shadow:  0 5px 10px 10px rgba(0, 0, 0, 0.05);;
+}
+
+.yellow-text{
+   color: hsl(71, 73%, 54%)
+   ; 
+}
+
+.price-title{
+    padding: 40px 35px;
+    grid-area: 1/1/2/3;
+}
+.price-title p{
+    color: hsl(195, 4%, 55%);
+    font-weight: 400;
+}
+.sign-section{
+    padding: 40px 35px;
+    background-color: hsl(179, 62%, 43%);
+}
+.faded{
+    opacity: 0.7;
+}
+span{
+    font-size: 40px;
+    color: #fff;
+}
+
+    
+    
+}
+.sign-section p{
+    color: hsl(204, 43%, 93%);;
+}
+.price-text{
+    padding: 40px 35px;
+    background-color: hsl(179, 47%, 52%);
+}
+@media screen and (max-width: 600px){
+    main{
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: 1fr;
+    }
+    .price-title{
+        grid-area: 1/1/2/2;
+    }
+    button{
+        width: 60%;
+    }
+}
